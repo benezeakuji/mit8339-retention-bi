@@ -1,0 +1,312 @@
+{
+  "kpis": {
+    "Total customers": 10127,
+    "Attrited customers": 1627,
+    "Attrition rate (%)": 16.07,
+    "Active customer ratio (%)": 54.74,
+    "Average credit limit ($)": 8631.95,
+    "Average utilisation ratio (%)": 27.49,
+    "Total transaction amount ($)": 44600182,
+    "Avg transactions per customer (12m)": 64.9,
+    "Avg product relationship count": 3.81,
+    "High-value customer share (%)": 24.97,
+    "High retention-risk customers": 1819,
+    "Transaction value lost to attrition (%)": 11.29
+  },
+  "demographic_spread": {
+    "Gender": {
+      "min": 14.6,
+      "max": 17.4,
+      "chi2_p": 0.00019635846717310307
+    },
+    "Age_Band": {
+      "min": 13.7,
+      "max": 16.5,
+      "chi2_p": 0.3052092836181243
+    },
+    "Income_Category": {
+      "min": 13.5,
+      "max": 17.3,
+      "chi2_p": 0.025002425704390617
+    },
+    "Education_Level": {
+      "min": 15.2,
+      "max": 21.1,
+      "chi2_p": 0.05148913147336634
+    },
+    "Marital_Status": {
+      "min": 15.1,
+      "max": 17.2,
+      "chi2_p": 0.10891263394840227
+    },
+    "Card_Category": {
+      "min": 14.8,
+      "max": 25.0,
+      "chi2_p": 0.5252382797994759
+    }
+  },
+  "comparison": {
+    "Total_Trans_Ct": {
+      "attrited_mean": 44.934,
+      "existing_mean": 68.673,
+      "attrited_median": 43.0,
+      "existing_median": 71.0,
+      "pct_difference_of_means": -34.568,
+      "mann_whitney_p": 0.0,
+      "significant_at_0.01": true
+    },
+    "Total_Trans_Amt": {
+      "attrited_mean": 3095.026,
+      "existing_mean": 4654.656,
+      "attrited_median": 2329.0,
+      "existing_median": 4100.0,
+      "pct_difference_of_means": -33.507,
+      "mann_whitney_p": 0.0,
+      "significant_at_0.01": true
+    },
+    "Total_Ct_Chng_Q4_Q1": {
+      "attrited_mean": 0.554,
+      "existing_mean": 0.742,
+      "attrited_median": 0.531,
+      "existing_median": 0.721,
+      "pct_difference_of_means": -25.329,
+      "mann_whitney_p": 0.0,
+      "significant_at_0.01": true
+    },
+    "Total_Amt_Chng_Q4_Q1": {
+      "attrited_mean": 0.694,
+      "existing_mean": 0.773,
+      "attrited_median": 0.701,
+      "existing_median": 0.743,
+      "pct_difference_of_means": -10.127,
+      "mann_whitney_p": 0.0,
+      "significant_at_0.01": true
+    },
+    "Total_Revolving_Bal": {
+      "attrited_mean": 672.823,
+      "existing_mean": 1256.604,
+      "attrited_median": 0.0,
+      "existing_median": 1364.0,
+      "pct_difference_of_means": -46.457,
+      "mann_whitney_p": 0.0,
+      "significant_at_0.01": true
+    },
+    "Avg_Utilization_Ratio": {
+      "attrited_mean": 0.162,
+      "existing_mean": 0.296,
+      "attrited_median": 0.0,
+      "existing_median": 0.211,
+      "pct_difference_of_means": -45.186,
+      "mann_whitney_p": 0.0,
+      "significant_at_0.01": true
+    },
+    "Total_Relationship_Count": {
+      "attrited_mean": 3.28,
+      "existing_mean": 3.915,
+      "attrited_median": 3.0,
+      "existing_median": 4.0,
+      "pct_difference_of_means": -16.22,
+      "mann_whitney_p": 0.0,
+      "significant_at_0.01": true
+    },
+    "Months_Inactive_12_mon": {
+      "attrited_mean": 2.693,
+      "existing_mean": 2.274,
+      "attrited_median": 3.0,
+      "existing_median": 2.0,
+      "pct_difference_of_means": 18.451,
+      "mann_whitney_p": 0.0,
+      "significant_at_0.01": true
+    },
+    "Contacts_Count_12_mon": {
+      "attrited_mean": 2.972,
+      "existing_mean": 2.356,
+      "attrited_median": 3.0,
+      "existing_median": 2.0,
+      "pct_difference_of_means": 26.142,
+      "mann_whitney_p": 0.0,
+      "significant_at_0.01": true
+    },
+    "Credit_Limit": {
+      "attrited_mean": 8136.039,
+      "existing_mean": 8726.878,
+      "attrited_median": 4178.0,
+      "existing_median": 4643.5,
+      "pct_difference_of_means": -6.77,
+      "mann_whitney_p": 0.0,
+      "significant_at_0.01": true
+    },
+    "Customer_Age": {
+      "attrited_mean": 46.659,
+      "existing_mean": 46.262,
+      "attrited_median": 47.0,
+      "existing_median": 46.0,
+      "pct_difference_of_means": 0.859,
+      "mann_whitney_p": 0.078,
+      "significant_at_0.01": false
+    },
+    "Months_on_book": {
+      "attrited_mean": 36.178,
+      "existing_mean": 35.881,
+      "attrited_median": 36.0,
+      "existing_median": 36.0,
+      "pct_difference_of_means": 0.83,
+      "mann_whitney_p": 0.124,
+      "significant_at_0.01": false
+    }
+  },
+  "patterns": {
+    "trans_ct_le_60": [
+      34.4,
+      4047
+    ],
+    "trans_ct_gt_60": [
+      3.9,
+      6080
+    ],
+    "ct_chng_lt_0.6": [
+      35.8,
+      2808
+    ],
+    "ct_chng_ge_0.6": [
+      8.5,
+      7319
+    ],
+    "zero_revolving": [
+      36.2,
+      2470
+    ],
+    "revolving_gt_0": [
+      9.6,
+      7657
+    ],
+    "products_1_2": [
+      26.9,
+      2153
+    ],
+    "products_3_plus": [
+      13.1,
+      7974
+    ],
+    "contacts_0_1": [
+      6.1,
+      1898
+    ],
+    "contacts_4_plus": [
+      26.4,
+      1622
+    ],
+    "contacts_6": [
+      100.0,
+      54
+    ],
+    "inactive_1": [
+      4.5,
+      2233
+    ],
+    "inactive_3_plus": [
+      22.0,
+      4583
+    ],
+    "low_freq_and_decline": [
+      52.3,
+      1866
+    ]
+  },
+  "risk_bands": {
+    "Low": {
+      "customers": 6263,
+      "attrited": 180,
+      "avg_trans_amt": 5491.43,
+      "total_trans_amt": 34392828,
+      "share_of_customers_pct": 61.84,
+      "attrition_rate_pct": 2.87,
+      "share_of_all_attriters_pct": 11.06
+    },
+    "Medium": {
+      "customers": 2045,
+      "attrited": 334,
+      "avg_trans_amt": 3044.77,
+      "total_trans_amt": 6226561,
+      "share_of_customers_pct": 20.19,
+      "attrition_rate_pct": 16.33,
+      "share_of_all_attriters_pct": 20.53
+    },
+    "High": {
+      "customers": 1819,
+      "attrited": 1113,
+      "avg_trans_amt": 2188.45,
+      "total_trans_amt": 3980793,
+      "share_of_customers_pct": 17.96,
+      "attrition_rate_pct": 61.19,
+      "share_of_all_attriters_pct": 68.41
+    }
+  },
+  "validation": {
+    "test_customers": 3039,
+    "auc_rule_score": 0.883,
+    "auc_logistic_benchmark": 0.91,
+    "high_band_precision_pct": 60.4,
+    "high_band_recall_pct": 65.0,
+    "high_or_medium_recall_pct": 87.7,
+    "low_band_attrition_pct": 3.2
+  },
+  "rules": [
+    {
+      "rule": "Trans count <= 60 (+3)",
+      "customers_flagged": 4047,
+      "attrition_if_true_pct": 34.4,
+      "attrition_if_false_pct": 3.9
+    },
+    {
+      "rule": "Q4/Q1 count change < 0.6 (+2)",
+      "customers_flagged": 2808,
+      "attrition_if_true_pct": 35.8,
+      "attrition_if_false_pct": 8.5
+    },
+    {
+      "rule": "Revolving balance < $500 (+2)",
+      "customers_flagged": 2595,
+      "attrition_if_true_pct": 38.5,
+      "attrition_if_false_pct": 8.4
+    },
+    {
+      "rule": "Products <= 2 (+1)",
+      "customers_flagged": 2153,
+      "attrition_if_true_pct": 26.9,
+      "attrition_if_false_pct": 13.1
+    },
+    {
+      "rule": "Inactive >= 3 months (+1)",
+      "customers_flagged": 4583,
+      "attrition_if_true_pct": 22.0,
+      "attrition_if_false_pct": 11.2
+    },
+    {
+      "rule": "Contacts >= 4 (+1)",
+      "customers_flagged": 1622,
+      "attrition_if_true_pct": 26.4,
+      "attrition_if_false_pct": 14.1
+    }
+  ],
+  "heatmap": {
+    "Thin (1-2)": {
+      "Very low (<=40)": 85.8,
+      "Low (41-60)": 88.2,
+      "Medium (61-80)": 20.5,
+      "High (>80)": 1.3
+    },
+    "Moderate (3-4)": {
+      "Very low (<=40)": 28.8,
+      "Low (41-60)": 32.3,
+      "Medium (61-80)": 3.2,
+      "High (>80)": 1.0
+    },
+    "Deep (5-6)": {
+      "Very low (<=40)": 18.0,
+      "Low (41-60)": 24.9,
+      "Medium (61-80)": 3.8,
+      "High (>80)": 1.3
+    }
+  }
+}

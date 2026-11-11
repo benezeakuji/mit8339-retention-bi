@@ -1,0 +1,24 @@
+column,dtype,non_null,missing_nan,unknown_placeholder,missing_or_unknown_pct,distinct,example
+CLIENTNUM,int64,10127,0,0,0.0,10127,768805383
+Attrition_Flag,str,10127,0,0,0.0,2,Existing Customer
+Customer_Age,int64,10127,0,0,0.0,45,45
+Gender,str,10127,0,0,0.0,2,M
+Dependent_count,int64,10127,0,0,0.0,6,3
+Education_Level,str,10127,0,1519,15.0,7,High School
+Marital_Status,str,10127,0,749,7.4,4,Married
+Income_Category,str,10127,0,1112,10.98,6,$60K - $80K
+Card_Category,str,10127,0,0,0.0,4,Blue
+Months_on_book,int64,10127,0,0,0.0,44,39
+Total_Relationship_Count,int64,10127,0,0,0.0,6,5
+Months_Inactive_12_mon,int64,10127,0,0,0.0,7,1
+Contacts_Count_12_mon,int64,10127,0,0,0.0,7,3
+Credit_Limit,float64,10127,0,0,0.0,6205,12691.0
+Total_Revolving_Bal,int64,10127,0,0,0.0,1974,777
+Avg_Open_To_Buy,float64,10127,0,0,0.0,6813,11914.0
+Total_Amt_Chng_Q4_Q1,float64,10127,0,0,0.0,1158,1.335
+Total_Trans_Amt,int64,10127,0,0,0.0,5033,1144
+Total_Trans_Ct,int64,10127,0,0,0.0,126,42
+Total_Ct_Chng_Q4_Q1,float64,10127,0,0,0.0,830,1.625
+Avg_Utilization_Ratio,float64,10127,0,0,0.0,964,0.061
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1,float64,10127,0,0,0.0,1704,9.3448e-05
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2,float64,10127,0,0,0.0,640,0.99991

@@ -1,0 +1,13 @@
+variable,attrited_mean,existing_mean,attrited_median,existing_median,pct_difference_of_means,mann_whitney_p,significant_at_0.01
+Total_Trans_Ct,44.9336,68.6726,43.0,71.0,-34.5683,0.0,True
+Total_Trans_Amt,3095.0258,4654.6559,2329.0,4100.0,-33.5069,0.0,True
+Total_Ct_Chng_Q4_Q1,0.5544,0.7424,0.531,0.721,-25.3286,0.0,True
+Total_Amt_Chng_Q4_Q1,0.6943,0.7725,0.701,0.743,-10.1271,0.0,True
+Total_Revolving_Bal,672.823,1256.6041,0.0,1364.0,-46.457,0.0,True
+Avg_Utilization_Ratio,0.1625,0.2964,0.0,0.211,-45.186,0.0,True
+Total_Relationship_Count,3.2797,3.9146,3.0,4.0,-16.2196,0.0,True
+Months_Inactive_12_mon,2.6933,2.2738,3.0,2.0,18.4512,0.0,True
+Contacts_Count_12_mon,2.9723,2.3564,3.0,2.0,26.1416,0.0,True
+Credit_Limit,8136.0395,8726.8775,4178.0,4643.5,-6.7703,0.0,True
+Customer_Age,46.6595,46.2621,47.0,46.0,0.859,0.0781,False
+Months_on_book,36.1782,35.8806,36.0,36.0,0.8296,0.1237,False

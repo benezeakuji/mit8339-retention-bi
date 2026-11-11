@@ -1,0 +1,8 @@
+{
+  "name": "mit8339-retention-bi",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Presentation deck builder for the MIT 8339 BI/DSS virtual lab",
+  "scripts": { "deck": "node src/06_build_deck.js" },
+  "dependencies": { "pptxgenjs": "^4.0.1" }
+}

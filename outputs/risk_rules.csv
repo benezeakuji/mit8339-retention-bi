@@ -1,0 +1,7 @@
+rule,customers_flagged,attrition_if_true_pct,attrition_if_false_pct
+Trans count <= 60 (+3),4047,34.4,3.9
+Q4/Q1 count change < 0.6 (+2),2808,35.8,8.5
+Revolving balance < $500 (+2),2595,38.5,8.4
+Products <= 2 (+1),2153,26.9,13.1
+Inactive >= 3 months (+1),4583,22.0,11.2
+Contacts >= 4 (+1),1622,26.4,14.1

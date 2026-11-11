@@ -1,0 +1,4 @@
+Risk_Band,customers,attrited,avg_trans_amt,total_trans_amt,share_of_customers_pct,attrition_rate_pct,share_of_all_attriters_pct
+Low,6263,180,5491.43,34392828,61.84,2.87,11.06
+Medium,2045,334,3044.77,6226561,20.19,16.33,20.53
+High,1819,1113,2188.45,3980793,17.96,61.19,68.41

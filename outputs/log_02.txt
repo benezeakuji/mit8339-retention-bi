@@ -1,0 +1,71 @@
+PORTFOLIO KPIs
+  Total customers                                   10,127
+  Attrited customers                                 1,627
+  Attrition rate (%)                                 16.07
+  Active customer ratio (%)                          54.74
+  Average credit limit ($)                        8,631.95
+  Average utilisation ratio (%)                      27.49
+  Total transaction amount ($)                  44,600,182
+  Avg transactions per customer (12m)                 64.9
+  Avg product relationship count                      3.81
+  High-value customer share (%)                      24.97
+  High retention-risk customers                      1,819
+  Transaction value lost to attrition (%)            11.29
+
+ATTRITED vs EXISTING
+                variable  attrited_mean  existing_mean  attrited_median  existing_median  pct_difference_of_means  mann_whitney_p  significant_at_0.01
+          Total_Trans_Ct         44.934         68.673           43.000           71.000                  -34.568           0.000                 True
+         Total_Trans_Amt       3095.026       4654.656         2329.000         4100.000                  -33.507           0.000                 True
+     Total_Ct_Chng_Q4_Q1          0.554          0.742            0.531            0.721                  -25.329           0.000                 True
+    Total_Amt_Chng_Q4_Q1          0.694          0.773            0.701            0.743                  -10.127           0.000                 True
+     Total_Revolving_Bal        672.823       1256.604            0.000         1364.000                  -46.457           0.000                 True
+   Avg_Utilization_Ratio          0.162          0.296            0.000            0.211                  -45.186           0.000                 True
+Total_Relationship_Count          3.280          3.915            3.000            4.000                  -16.220           0.000                 True
+  Months_Inactive_12_mon          2.693          2.274            3.000            2.000                   18.451           0.000                 True
+   Contacts_Count_12_mon          2.972          2.356            3.000            2.000                   26.142           0.000                 True
+            Credit_Limit       8136.039       8726.878         4178.000         4643.500                   -6.770           0.000                 True
+            Customer_Age         46.659         46.262           47.000           46.000                    0.859           0.078                False
+          Months_on_book         36.178         35.881           36.000           36.000                    0.830           0.124                False
+
+PATTERNS (attrition %, n)
+  trans_ct_le_60          (34.4, 4047)
+  trans_ct_gt_60          (3.9, 6080)
+  ct_chng_lt_0.6          (35.8, 2808)
+  ct_chng_ge_0.6          (8.5, 7319)
+  zero_revolving          (36.2, 2470)
+  revolving_gt_0          (9.6, 7657)
+  products_1_2            (26.9, 2153)
+  products_3_plus         (13.1, 7974)
+  contacts_0_1            (6.1, 1898)
+  contacts_4_plus         (26.4, 1622)
+  contacts_6              (100.0, 54)
+  inactive_1              (4.5, 2233)
+  inactive_3_plus         (22.0, 4583)
+  low_freq_and_decline    (52.3, 1866)
+
+RISK BANDS
+           customers  attrited  avg_trans_amt  total_trans_amt  share_of_customers_pct  attrition_rate_pct  share_of_all_attriters_pct
+Risk_Band                                                                                                                             
+Low             6263       180         5491.4         34392828                    61.8                 2.9                        11.1
+Medium          2045       334         3044.8          6226561                    20.2                16.3                        20.5
+High            1819      1113         2188.5          3980793                    18.0                61.2                        68.4
+
+HOLD-OUT VALIDATION
+  test_customers              3039
+  auc_rule_score              0.883
+  auc_logistic_benchmark      0.91
+  high_band_precision_pct     60.4
+  high_band_recall_pct        65.0
+  high_or_medium_recall_pct   87.7
+  low_band_attrition_pct      3.2
+
+RULES
+                         rule  customers_flagged  attrition_if_true_pct  attrition_if_false_pct
+       Trans count <= 60 (+3)               4047                   34.4                     3.9
+Q4/Q1 count change < 0.6 (+2)               2808                   35.8                     8.5
+Revolving balance < $500 (+2)               2595                   38.5                     8.4
+           Products <= 2 (+1)               2153                   26.9                    13.1
+    Inactive >= 3 months (+1)               4583                   22.0                    11.2
+           Contacts >= 4 (+1)               1622                   26.4                    14.1
+
+Saved outputs/*.csv, outputs/summary.json and figures/*.png

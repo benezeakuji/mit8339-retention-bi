@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+# Node
+node_modules/
+package-lock.json
+# Built deliverables (regenerate with src/05-07)
+submission/
+report/report_full.html
+# OS / editor
+.DS_Store
+Thumbs.db
+~$*
+.vscode/
+.idea/

@@ -1,0 +1,48 @@
+Loaded BankChurners.csv: 10,127 rows x 23 columns
+
+BEFORE - data-quality profile
+                                                                                                                            column   dtype  missing_nan  unknown_placeholder  distinct
+                                                                                                                         CLIENTNUM   int64            0                    0     10127
+                                                                                                                    Attrition_Flag     str            0                    0         2
+                                                                                                                      Customer_Age   int64            0                    0        45
+                                                                                                                            Gender     str            0                    0         2
+                                                                                                                   Dependent_count   int64            0                    0         6
+                                                                                                                   Education_Level     str            0                 1519         7
+                                                                                                                    Marital_Status     str            0                  749         4
+                                                                                                                   Income_Category     str            0                 1112         6
+                                                                                                                     Card_Category     str            0                    0         4
+                                                                                                                    Months_on_book   int64            0                    0        44
+                                                                                                          Total_Relationship_Count   int64            0                    0         6
+                                                                                                            Months_Inactive_12_mon   int64            0                    0         7
+                                                                                                             Contacts_Count_12_mon   int64            0                    0         7
+                                                                                                                      Credit_Limit float64            0                    0      6205
+                                                                                                               Total_Revolving_Bal   int64            0                    0      1974
+                                                                                                                   Avg_Open_To_Buy float64            0                    0      6813
+                                                                                                              Total_Amt_Chng_Q4_Q1 float64            0                    0      1158
+                                                                                                                   Total_Trans_Amt   int64            0                    0      5033
+                                                                                                                    Total_Trans_Ct   int64            0                    0       126
+                                                                                                               Total_Ct_Chng_Q4_Q1 float64            0                    0       830
+                                                                                                             Avg_Utilization_Ratio float64            0                    0       964
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1 float64            0                    0      1704
+Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2 float64            0                    0       640
+
+CLEANING LOG
+  [Leakage columns (Naive_Bayes_*)] 2 present in this copy -> Dropped
+  [Duplicate CLIENTNUM] 0 -> None to remove
+  [Duplicate records (all attributes)] 0 -> None to remove
+  [Inconsistent labels] Whitespace trimmed; Gender codes F/M; income label spacing -> Standardised to readable, consistent labels
+  [Target variable] Text flag 'Attrition_Flag' -> Encoded as Churned (1/0) + Customer_Status
+  [System missing values (NaN)] 0 -> None to impute
+  ['Unknown' placeholder in Education_Level] 1,519 rows (15.0%), churn 16.9% -> Retained as explicit 'Unknown' category (not imputed, not dropped)
+  ['Unknown' placeholder in Marital_Status] 749 rows (7.4%), churn 17.2% -> Retained as explicit 'Unknown' category (not imputed, not dropped)
+  ['Unknown' placeholder in Income_Category] 1,112 rows (11.0%), churn 16.8% -> Retained as explicit 'Unknown' category (not imputed, not dropped)
+  [Rows with >=1 Unknown demographic] 3,046 (30.1%) -> Flagged in Has_Unknown_Profile; listwise deletion would discard ~30% of the portfolio
+  [Utilisation ratio outside [0,1]] 0 -> None invalid
+  [Credit_Limit = Revolving_Bal + Open_To_Buy] 0 violations -> Identity holds - no correction
+  [Negative numeric values] 0 -> None invalid
+  [Implausible ages (<18 or >100)] 0 -> None invalid
+  [IQR outliers] 4,983 flags across 10 columns (largest: Contacts_Count_12_mon, Credit_Limit, Avg_Open_To_Buy, Total_Trans_Amt) -> Retained - values are plausible (e.g. premium-card limits, high spenders) and carry churn signal
+  [Derived fields] 12 created -> Age_Band, Income_Segment, Income_Rank, Utilisation_Category, Txn_Frequency_Category, Customer_Value_Class, Product_Depth, Tenure_Band, Service_Contact_Band, Activity_Decline_Flag, Risk_Score, Risk_Band
+
+AFTER - 10,127 rows x 36 columns, NaN = 0, duplicate IDs = 0
+Saved data/BankChurners_cleaned.csv and .xlsx

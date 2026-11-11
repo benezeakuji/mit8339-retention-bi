@@ -1,0 +1,17 @@
+check,result,action
+Leakage columns (Naive_Bayes_*),2 present in this copy,Dropped
+Duplicate CLIENTNUM,0,None to remove
+Duplicate records (all attributes),0,None to remove
+Inconsistent labels,Whitespace trimmed; Gender codes F/M; income label spacing,"Standardised to readable, consistent labels"
+Target variable,Text flag 'Attrition_Flag',Encoded as Churned (1/0) + Customer_Status
+System missing values (NaN),0,None to impute
+'Unknown' placeholder in Education_Level,"1,519 rows (15.0%), churn 16.9%","Retained as explicit 'Unknown' category (not imputed, not dropped)"
+'Unknown' placeholder in Marital_Status,"749 rows (7.4%), churn 17.2%","Retained as explicit 'Unknown' category (not imputed, not dropped)"
+'Unknown' placeholder in Income_Category,"1,112 rows (11.0%), churn 16.8%","Retained as explicit 'Unknown' category (not imputed, not dropped)"
+Rows with >=1 Unknown demographic,"3,046 (30.1%)",Flagged in Has_Unknown_Profile; listwise deletion would discard ~30% of the portfolio
+"Utilisation ratio outside [0,1]",0,None invalid
+Credit_Limit = Revolving_Bal + Open_To_Buy,0 violations,Identity holds - no correction
+Negative numeric values,0,None invalid
+Implausible ages (<18 or >100),0,None invalid
+IQR outliers,"4,983 flags across 10 columns (largest: Contacts_Count_12_mon, Credit_Limit, Avg_Open_To_Buy, Total_Trans_Amt)","Retained - values are plausible (e.g. premium-card limits, high spenders) and carry churn signal"
+Derived fields,12 created,"Age_Band, Income_Segment, Income_Rank, Utilisation_Category, Txn_Frequency_Category, Customer_Value_Class, Product_Depth, Tenure_Band, Service_Contact_Band, Activity_Decline_Flag, Risk_Score, Risk_Band"

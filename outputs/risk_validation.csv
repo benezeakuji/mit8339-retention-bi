@@ -1,0 +1,8 @@
+,value
+test_customers,3039.0
+auc_rule_score,0.883
+auc_logistic_benchmark,0.91
+high_band_precision_pct,60.4
+high_band_recall_pct,65.0
+high_or_medium_recall_pct,87.7
+low_band_attrition_pct,3.2
