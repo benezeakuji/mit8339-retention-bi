@@ -5,8 +5,8 @@ built on the BankChurners dataset (10,127 customers). It covers data profiling a
 development, attrited-vs-existing analysis, a rule-based retention-risk score, an interactive two-page
 dashboard, and the written report.
 
-**Course:** MIT 8339 – Business Intelligence and Decision Support Systems, Miva Open University
-**Author:** [Student Name] ([Student ID])
+**Course:** MIT 8339 – Business Intelligence and Decision Support Systems, Master of Information Technology, Miva Open University
+**Author:** Benjamin Ezeakuji
 
 ## Key results
 
